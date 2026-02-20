@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 SECURITY_TOKEN      = os.getenv("SECURITY_TOKEN", "")
 VISUAL_CROSSING_KEY = os.getenv("VISUAL_CROSSING_KEY", "")
-AI_KEY              = os.getenv("AI_KEY", "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")
+AI_KEY              = os.getenv("AI_KEY", "")
 
 def validate_request(data):
     for field in ["token", "requester_name", "location", "date"]:
